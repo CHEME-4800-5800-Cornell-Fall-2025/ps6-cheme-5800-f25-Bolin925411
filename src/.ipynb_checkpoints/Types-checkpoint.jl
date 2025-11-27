@@ -27,7 +27,9 @@ mutable struct MyExperimentalDrugCocktailContext <: MyAbstractContextModel
 
     # TODO: you need to add a safety field, and a bounds field here
     # throw(ErrorException("You need to add a safety field, and a bounds field here"));
+    S::Float64
     bounds::Array{Float64,2}
+    
     # constructor -
     MyExperimentalDrugCocktailContext() = new(); # create new *empty* instance 
 end
